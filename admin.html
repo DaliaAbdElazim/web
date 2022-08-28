@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="admin.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> "ADMIN" </title>
+</head>
+
+<body>
+
+    <!--  Div bar -->
+    <div class="bar">
+        <a href="Homepage.html">Home</a>
+        <a href="movies.html">Movies</a>
+        <a href="tvshows.html">TV Shows</a>
+        <a href="anime.html">Anime</a>
+        <a href="about.html">About</a>
+        <a href="login.html">ADMIN</a>
+
+    </div>
+    
+    <div>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+            <img src="adminicon.jfif" id="adminlogo" width="90" height="90"> <br/>
+
+           
+           <p  id="header"> This <span class="auto-type"></span>
+             <script >
+            var typed = new Typed(".auto-type", {
+                strings: ["is Adminstrator Level..!"],
+                typeSpeed: 150,
+                backSpeed: 150,
+                loop: true
+            })
+            </script> 
+            </p> 
+          
+    </div>
+
+    <button class="btn" type="button" onclick=" SHOW_LOCALSTORAGE()"> SHOW THE DATA </button>
+     <div class="content" > <h1> Choose BackGround Color: </h1> <button onclick="x()" class ="bt">Apply</button>  <input type="color" id="color"> </div>
+
+     <div class="UserData">   <h2>  LOCAL STORAGE DATA:  </h2>
+    
+    <table id="usersTable"> </table>
+    <script src="bg.js"></script>
+</div>
+
+    
+</body>
+
+
+</html>

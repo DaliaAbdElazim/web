@@ -1,0 +1,124 @@
+/* Style background-color */
+body {
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    margin: auto 10px;
+    width: auto;
+    height: 2000px;
+
+}
+
+.bar {
+    background-color: #2B4865;
+    overflow: hidden;
+    margin: -10px;
+    height: 65px;
+    border-radius: 5px;
+}
+
+.bar a {
+    float: left;
+    color: aliceblue;
+    text-align: center;
+    padding: 25px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-style: bold;
+}
+
+.bar a:hover {
+    background-color: #A66CFF;
+    color: black;
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#color { 
+   position: relative;
+   bottom: 45px;
+   left :350px;
+
+
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    width: 250px;
+    background: lightblue;
+    padding: 5px;
+    font-family: monospace;
+    font-size: 16px;
+    border: 2;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 75px;
+   left: 370px;
+   font-weight: 300;
+}
+
+table,
+th,
+td {
+    margin-top: 10px;
+    padding: 3px;
+    border: black solid;
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+}
+  
+
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+#adminlogo {
+    background: white;
+    border-radius: 90px;
+    position: relative;
+    top: 60px ;
+   left :830px;
+   height : 180px;
+   width : 180px;
+   border-color: black;
+}
+#header {
+    background-color: #2B4865;
+    width : 480px;
+    height: 65px;
+    font-size:x-large;
+    border-radius: 20px;
+    position: relative;
+    top: 60px ;
+    left :680px;
+    color: white;
+    text-align: center;
+   padding-top: 30px;
+   padding-bottom: 5px;
+}
+
+
+.content {
+    border:rgb(53, 53, 123); border-width:10px; border-style:outset;
+   text-align: left;
+   padding: 30px;
+    width : 600px;
+   margin: 20px;
+   margin-top: 110px;
+
+}
+.bt {
+    position :relative ;
+    bottom: 48px;
+    left :460px;
+
+}
+.UserData{
+    border:rgb(53, 53, 123); border-width:10px; border-style:outset;
+    width : 600px;
+    text-align: left;
+   padding: 30px;
+   margin: 20px;
+   margin-top: 110px;
+   font-weight: 500;
+}
+
+#usersTable {
+    width :550px;
+}
