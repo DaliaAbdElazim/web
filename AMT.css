@@ -1,0 +1,659 @@
+/*stylying bar section*/
+
+.bar {
+    background-color: #2B4865;
+    overflow: hidden;
+    margin: -6px;
+    height: 79px;
+    border-radius: 20px;
+
+
+}
+
+.bar a {
+    float: left;
+    color: aliceblue;
+    text-align: center;
+    padding: 25px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-style: bold;
+    font-family: serif;
+}
+
+.bar a:hover {
+    background-color: #C8B6E2;
+    color: black;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Style the search box inside the navigation bar */
+/* Style the search field */
+
+* {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+form.example input[type=text] {
+    position: absolute;
+    left: 800px;
+    top: 10px;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid grey;
+    float: right;
+    width: 16%;
+    background: #f1f1f1;
+    border-radius: 20px;
+}
+
+form.example button {
+    border-radius: 40px;
+    position: absolute;
+    left: 1070px;
+    top: 10px;
+    float: right;
+    width: 3%;
+    padding: 2px;
+    background: #A66CFF;
+    color: white;
+    font-size: 28px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.example button:hover {
+    background: #0b7dda;
+}
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*styling button of Logout */
+
+
+.Lo {
+    position: absolute;
+    left: 90%;
+    top: 1%;
+    font-size: 35px;
+    font-family: serif;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000;
+    background-color: #6495ed;
+    border-radius: 50px;
+    width: 150px;
+    color: white;
+
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*the select of the button back_ground color */
+.Lo:hover {
+    background-color: #A66CFF;
+    color: black;
+}
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*when user click on the box it will shadow*/
+.Lo:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6), inset 2px 2px 3px rgba(0, 0, 0, .6);
+    color: white;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*styling background color  */
+
+body {
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.bgGround {
+    height: 140vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*Styling of the posters rows beside each other as aphotos*/
+
+.coulmn1 {
+    position: relative;
+    top: -80px;
+    left: 10px;
+    margin-bottom: 30px;
+    /* Vertical Space */
+}
+
+.coulmn2 {
+    position: relative;
+    top: -10px;
+    left: 10px;
+    margin-bottom: 10px;
+    /* Vertical Space */
+}
+
+.coulmn3 {
+    position: relative;
+    top: 70px;
+    left: 10px;
+    margin-bottom: 10px;
+    /* Vertical Space */
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*styling box of rate*/
+
+.RatingC1 {
+    background: #f1f1f1;
+    position: absolute;
+    top: 453px;
+    bottom: 0;
+    right: 1677px;
+    padding: 0 10px;
+    height: 45px;
+    width: 200px;
+    text-align: left;
+    text-decoration-color: #f1f1f1;
+    font-size: large;
+}
+
+.RatingC2 {
+    background: #f1f1f1;
+    position: absolute;
+    top: 453px;
+    bottom: 0;
+    right: 1443px;
+    padding: 0 10px;
+    height: 45px;
+    width: 200px;
+    text-align: left;
+    text-decoration-color: #f1f1f1;
+    font-size: large;
+}
+
+.RatingC3 {
+    background: #f1f1f1;
+    position: absolute;
+    top: 453px;
+    bottom: 0;
+    right: 1208px;
+    padding: 0 10px;
+    height: 45px;
+    width: 200px;
+    text-align: left;
+    text-decoration-color: #f1f1f1;
+    font-size: larger;
+}
+
+.RatingC4 {
+    background: #f1f1f1;
+    position: absolute;
+    top: 453px;
+    bottom: 0;
+    right: 974px;
+    padding: 0 10px;
+    height: 45px;
+    width: 200px;
+    text-align: left;
+    text-decoration-color: #f1f1f1;
+    font-size: large;
+}
+
+.RatingC5 {
+    background: #f1f1f1;
+    position: absolute;
+    top: 453px;
+    bottom: 0;
+    right: 739px;
+    padding: 0 10px;
+    height: 45px;
+    width: 200px;
+    text-align: left;
+    text-decoration-color: #f1f1f1;
+    font-size: larger;
+}
+
+.RatingC6 {
+    background: #f1f1f1;
+    position: absolute;
+    top: 453px;
+    bottom: 0;
+    right: 505px;
+    padding: 0 10px;
+    height: 45px;
+    width: 200px;
+    text-align: left;
+    text-decoration-color: #f1f1f1;
+    font-size: large;
+}
+
+.RatingC7 {
+    background: #f1f1f1;
+    position: absolute;
+    top: 453px;
+    bottom: 0;
+    right: 270px;
+    padding: 0 10px;
+    height: 45px;
+    width: 200px;
+    text-align: left;
+    text-decoration-color: #f1f1f1;
+    font-size: larger;
+}
+
+.RatingC8 {
+    background: #f1f1f1;
+    position: absolute;
+    top: 453px;
+    bottom: 0;
+    right: 36px;
+    padding: 0 10px;
+    height: 45px;
+    width: 200px;
+    text-align: left;
+    text-decoration-color: #f1f1f1;
+    font-size: larger;
+}
+
+.RatingC9 {
+    background: #f1f1f1;
+    position: absolute;
+    top: 841px;
+    bottom: 0;
+    right: 1677px;
+    padding: 0 10px;
+    height: 65px;
+    width: 200px;
+    text-align: left;
+    text-decoration-color: #f1f1f1;
+    font-size: larger;
+}
+
+.RatingC10 {
+    background: #f1f1f1;
+    position: absolute;
+    top: 841px;
+    bottom: 0;
+    right: 1443px;
+    padding: 0 10px;
+    height: 55px;
+    width: 200px;
+    text-align: left;
+    text-decoration-color: #f1f1f1;
+    font-size: larger;
+}
+
+.RatingC11 {
+    background: #f1f1f1;
+    position: absolute;
+    top: 841px;
+    bottom: 0;
+    right: 1208px;
+    padding: 0 10px;
+    height: 45px;
+    width: 200px;
+    text-align: left;
+    text-decoration-color: #f1f1f1;
+    font-size: larger;
+}
+
+.RatingC12 {
+    background: #f1f1f1;
+    position: absolute;
+    top: 841px;
+    bottom: 0;
+    right: 974px;
+    padding: 0 10px;
+    height: 45px;
+    width: 200px;
+    text-align: left;
+    text-decoration-color: #f1f1f1;
+    font-size: larger;
+}
+
+.RatingC13 {
+    background: #f1f1f1;
+    position: absolute;
+    top: 841px;
+    bottom: 0;
+    right: 739px;
+    padding: 0 10px;
+    height: 45px;
+    width: 200px;
+    text-align: left;
+    text-decoration-color: #f1f1f1;
+    font-size: larger;
+}
+
+.RatingC14 {
+    background: #f1f1f1;
+    position: absolute;
+    top: 841px;
+    bottom: 0;
+    right: 505px;
+    padding: 0 10px;
+    height: 45px;
+    width: 200px;
+    text-align: left;
+    text-decoration-color: #f1f1f1;
+    font-size: larger;
+}
+
+.RatingC15 {
+    background: #f1f1f1;
+    position: absolute;
+    top: 841px;
+    bottom: 0;
+    right: 270px;
+    padding: 0 10px;
+    height: 45px;
+    width: 200px;
+    text-align: left;
+    text-decoration-color: #f1f1f1;
+    font-size: larger;
+}
+
+.RatingC16 {
+    background: #f1f1f1;
+    position: absolute;
+    top: 841px;
+    bottom: 0;
+    right: 36px;
+    padding: 0 10px;
+    height: 45px;
+    width: 200px;
+    text-align: left;
+    text-decoration-color: #f1f1f1;
+    font-size: small;
+}
+
+.RatingC17 {
+    background: #f1f1f1;
+    position: absolute;
+    top: 1202px;
+    bottom: 0;
+    right: 1677px;
+    padding: 0 10px;
+    height: 55px;
+    width: 200px;
+    text-align: left;
+    text-decoration-color: #f1f1f1;
+    font-size: large;
+}
+
+.RatingC18 {
+    background: #f1f1f1;
+    position: absolute;
+    top: 1202px;
+    bottom: 0;
+    right: 1443px;
+    padding: 0 10px;
+    height: 55px;
+    width: 200px;
+    text-align: left;
+    text-decoration-color: #f1f1f1;
+    font-size: large;
+}
+
+.RatingC19 {
+    background: #f1f1f1;
+    position: absolute;
+    top: 1202px;
+    bottom: 0;
+    right: 1208px;
+    padding: 0 10px;
+    height: 45px;
+    width: 200px;
+    text-align: left;
+    text-decoration-color: #f1f1f1;
+    font-size: larger;
+}
+
+.RatingC20 {
+    background: #f1f1f1;
+    position: absolute;
+    top: 1202px;
+    bottom: 0;
+    right: 974px;
+    padding: 0 10px;
+    height: 45px;
+    width: 200px;
+    text-align: left;
+    text-decoration-color: #f1f1f1;
+    font-size: larger;
+}
+
+.RatingC21 {
+    background: #f1f1f1;
+    position: absolute;
+    top: 1202px;
+    bottom: 0;
+    right: 739px;
+    padding: 0 10px;
+    height: 45px;
+    width: 200px;
+    text-align: left;
+    text-decoration-color: #f1f1f1;
+    font-size: larger;
+}
+
+.RatingC22 {
+    background: #f1f1f1;
+    position: absolute;
+    top: 1202px;
+    bottom: 0;
+    right: 505px;
+    padding: 0 10px;
+    height: 60px;
+    width: 200px;
+    text-align: left;
+    text-decoration-color: #f1f1f1;
+    font-size: larger;
+}
+
+.RatingC23 {
+    background: #f1f1f1;
+    position: absolute;
+    top: 1202px;
+    bottom: 0;
+    right: 270px;
+    padding: 0 10px;
+    height: 45px;
+    width: 200px;
+    text-align: left;
+    text-decoration-color: #f1f1f1;
+    font-size: larger;
+}
+
+.RatingC24 {
+    background: #ffffff;
+    position: absolute;
+    top: 1202px;
+    bottom: 0;
+    right: 36px;
+    padding: 0 10px;
+    height: 45px;
+    width: 200px;
+    text-align: left;
+    text-decoration-color: #f1f1f1;
+    font-size: larger;
+}
+
+
+/*--styling border around posters the white one--*/
+
+.p1 {
+    border: 1px solid #ddd;
+    /* Gray border */
+    border-radius: 6px;
+    /* Rounded border */
+    padding: 5px;
+    /* Some padding */
+    background-color: #ffffff;
+}
+
+
+/*--styling trailer boxes--*/
+
+.tr1,
+.tr2,
+.tr3,
+.tr4,
+.tr5,
+.tr6,
+.tr7,
+.tr8,
+.tr9,
+.tr10,
+.tr11,
+.tr12,
+.tr13,
+.tr14,
+.tr15,
+.tr16,
+.tr17,
+.tr18,
+.tr19,
+.tr20,
+.tr21,
+.tr22,
+.tr23,
+.tr24 {
+    left: -10px;
+    position: relative;
+    font-size: 20px;
+    font-family: serif;
+    text-shadow: 1px 1px 1px #9c81b1;
+    background-color: white;
+    width: 200px;
+    height: 30px;
+    padding-top: 5px;
+    text-align: center;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.tr1:hover,
+.tr2:hover,
+.tr3:hover,
+.tr4:hover,
+.tr5:hover,
+.tr6:hover,
+.tr7:hover,
+.tr8:hover,
+.tr9:hover,
+.tr10:hover,
+.tr11:hover,
+.tr12:hover,
+.tr13:hover,
+.tr14:hover,
+.tr15:hover,
+.tr16:hover,
+.tr17:hover,
+.tr18:hover,
+.tr19:hover,
+.tr20:hover,
+.tr21:hover,
+.tr22:hover,
+.tr23:hover,
+.tr24:hover {
+    background-color: #b891f2;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*when user click on the box it will shadow*/
+.tr1:active,
+.tr2:active,
+.tr3:active,
+.tr4:active,
+.tr5:active,
+.tr6:active,
+.tr7:active,
+.tr8:active,
+.tr9:active,
+.tr10:active,
+.tr11:active,
+.tr12:active,
+.tr13:active,
+.tr14:active,
+.tr15:active,
+.tr16:active,
+.tr17:active,
+.tr18:active,
+.tr19:active,
+.tr20:active,
+.tr21:active,
+.tr22:active,
+.tr23:active,
+.tr24:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+        inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+.tr1,
+.tr2,
+.tr4,
+.tr6 {
+
+    top: 9px;
+
+}
+
+.tr3,
+.tr5,
+.tr7,
+.tr8,
+.tr9,
+.tr10,
+.tr11,
+.tr12,
+.tr13,
+.tr14,
+.tr15,
+.tr16,
+.tr17,
+.tr18,
+.tr19,
+.tr20,
+.tr21,
+.tr22,
+.tr23,
+.tr24 {
+
+    top: 6px;
+
+}
