@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="Register.css">
+	<meta charset="UTF-8">
+	<title>"Register"</title>
+
+	<script defer type="text/javascript">
+
+		function validateForm() {
+			var x = document.forms["Resform"]["email"].value;
+			var y = document.forms["Resform"]["password"].value;
+			var z = document.forms["Resform"]["password2"].value;
+			var w = document.forms["Resform"]["phonenumber"].value;
+			if (x == "" || x == null) {
+				alert("email must be filled out");
+				return false;
+			}
+			if (y == "" || y == null) {
+				alert("Password must be filled out");
+				return false;
+			}
+			if (x.indexOf("@") == -1 || x.indexOf(".") == -1) {
+				alert("Please Enter valid email, info@gmail.com");
+				x = " ";
+				return false;
+			}
+			if (y != z) {
+				alert("The Password doesn't match");
+				return false;
+			}
+			if (w.indexOf("0") == -1 || w.indexOf("1") == -1) {
+				alert("There's something wrong, please check your number again.");
+				w = " ";
+				return false;
+			}
+
+		}
+
+
+
+		var users = [];
+		if (localStorage.getItem("x") == null) {
+			users = [];
+		}
+		else {
+			users = JSON.parse(localStorage.getItem("x"));
+		}
+
+		function register() {
+			var email = document.getElementById("email").value;
+			var password = document.getElementById("password").value;
+			var password2 = document.getElementById("password2").value;
+			var phonenumber = document.getElementById("phonenumber").value;
+
+			if (password == password2) {
+				if (phonenumber.indexOf("0") != -1 && phonenumber.indexOf("1") != -1) {
+					//set user input into JSON
+					var user = { email: email, password: password };
+					//push new user to array
+					users.push(user);
+					//save to localStorage
+					localStorage.setItem("x", JSON.stringify(users));
+
+				}
+			}
+
+
+		}
+
+	</script>
+
+</head>
+
+<body>
+	<div class="bgImg"> </div>
+
+	<div class="wholeForm">
+		<div class="register">
+			<div class="title">Registration</div>
+			<div class="content">
+				<form action="Homepage.html" name="Resform" onsubmit="return validateForm()" on method="post"
+					id="Resform" required>
+					<div class="user-details">
+						<div class="input-box">
+							<span class="details">Full Name</span>
+							<input type="text" placeholder="Enter your name" required>
+						</div>
+						<div class="input-box">
+							<span class="details">User name</span>
+							<input type="text" placeholder="Enter your user name" required>
+						</div>
+						<div class="input-box">
+							<span class="details">Email</span>
+							<input type="email" name="email" id="email" placeholder="Enter your email" required>
+						</div>
+						<div class="input-box">
+							<span class="details">Phone Number</span>
+							<input type="text" name="phonenumber" placeholder="Enter your number" id="phonenumber"
+								required>
+						</div>
+						<div class="input-box">
+							<span class="details">Password</span>
+							<input type="text" name="password" placeholder="Enter your password" id="password" required>
+						</div>
+						<div class="input-box">
+							<span class="details">Confirm Password</span>
+							<input type="text" name="password2" placeholder="Confirm your password" id="password2"
+								required>
+						</div>
+					</div>
+					<div class="gender-details" required>
+						<input type="radio" name="gender" id="dot-1">
+						<input type="radio" name="gender" id="dot-2">
+						<input type="radio" name="gender" id="dot-3">
+						<span class="gender-title">Gender</span>
+						<div class="category">
+							<label for="dot-1">
+								<span class="dot one"></span>
+								<span class="gender">Male</span>
+							</label>
+							<label for="dot-2">
+								<span class="dot two"></span>
+								<span class="gender">Female</span>
+							</label>
+							<label for="dot-3">
+								<span class="dot three"></span>
+								<span class="gender">Prefer not to say</span>
+							</label>
+						</div>
+					</div>
+					<div class="button">
+						<input type="submit" value="Register" onclick="register()">
+					</div>
+					<p>Already have an account? <a href="login.html">Login</a>.</p>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

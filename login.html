@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="login.css">
+  <meta charset="UTF-8" />
+  <title>"Login"</title>
+
+  <script defer type="text/javascript">
+
+
+    function validateForm() {
+      var x = document.forms["loginform"]["email"].value;
+      if (x == "" || x == null) {
+        alert("Name must be filled out");
+        return false;
+      }
+      var y = document.forms["loginform"]["password"].value;
+      if (y == "" || y == null) {
+        alert("Password must be filled out");
+        return false;
+      }
+      if (x.indexOf("@") == -1 || x.indexOf(".") == -1) {
+        alert("Please Enter valid email, info@gmail.com");
+        x = " ";
+        return false;
+      }
+
+
+    }
+
+    function login() {
+      var email = document.getElementById("email").value;
+      var password = document.getElementById("password").value;
+      var user = { email: email, password: password };
+      var users = [];
+      users = JSON.parse(localStorage.getItem("x"));
+
+      if (users[0]) {
+        for (let i = 0; i < users.length; i++) {
+          if (users[i].email === user.email && users[i].password === user.password) {
+
+            if (users[i].email === "cinematime@gmail.com") {
+              document.getElementById('loginform').action = "admin.html";
+
+            }
+            else {
+              document.getElementById('loginform').action = "Homepage.html";
+            }
+            break;
+          }
+
+        }
+      }
+
+
+    }
+
+  </script>
+
+</head>
+
+<body>
+
+  <div class="bgImg"> </div>
+
+  <div class="wholeForm">
+    <div class="login">
+      <h1>Login</h1>
+      <form name="loginform" onsubmit="return validateForm()" method="post" id="loginform" required>
+        <div class="form-control">
+          <input type="text" name="email" id="email" required>
+
+          <label>
+            <span style="transition-delay: 0ms">E</span>
+            <span style="transition-delay: 50ms">m</span>
+            <span style="transition-delay: 100ms">a</span>
+            <span style="transition-delay: 150ms">i</span>
+            <span style="transition-delay: 200ms">l</span>
+          </label>
+        </div>
+
+        <div class="form-control">
+          <input type="password" name="password" id="password" required>
+
+          <label>
+            <span style="transition-delay: 0ms">P</span>
+            <span style="transition-delay: 50ms">a</span>
+            <span style="transition-delay: 100ms">s</span>
+            <span style="transition-delay: 150ms">s</span>
+            <span style="transition-delay: 200ms">w</span>
+            <span style="transition-delay: 250ms">o</span>
+            <span style="transition-delay: 300ms">r</span>
+            <span style="transition-delay: 350ms">d</span>
+          </label>
+        </div>
+
+        <button class="btn" type="submit" onclick="login()"> login </button>
+
+        <p class="dnt">Don't have an account? <a href="Register.html">Register</a> </p>
+      </form>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
