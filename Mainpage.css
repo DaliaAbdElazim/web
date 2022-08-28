@@ -1,0 +1,141 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url("wp4027868-venom-4k-wallpapers.jpg");
+    background-size: cover;
+    height: 100%;
+    font-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*styling buttons of register and login  */
+
+
+.L {
+    position: relative;
+    left: 500px;
+    top: 550px;
+    font-size: 50px;
+    font-family: serif;
+    text-shadow: 1px 1px 1px #000;
+    background-color: #6495ed;
+    border-radius: 150px;
+    width: 160px;
+    color: white;
+}
+
+.R {
+    position: relative;
+    left: 100px;
+    top: 550px;
+    font-size: 50px;
+    font-family: serif;
+    text-shadow: 1px 1px 1px #000;
+    background-color: #6495ed;
+    border-radius: 150px;
+    width: 160px;
+    color: white;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*the select of the button back_ground color */
+
+.L:hover {
+    background-color: #A66CFF;
+    color: black;
+}
+
+.R:hover {
+    background-color: #A66CFF;
+    color: black;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*when user click on the box it will shadow*/
+.L:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6), inset 2px 2px 3px rgba(0, 0, 0, .6);
+    color: white;
+}
+
+.R:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6), inset 2px 2px 3px rgba(0, 0, 0, .6);
+    color: white;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*styling of welcome box with page name*/
+
+.bckgndOfBox {
+    position: absolute;
+    left: 200px;
+    top: 250px;
+    /* background-image: url("Shingeki-no-Kyojin-4.jpg");*/
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    color: #fff;
+    opacity: .5;
+}
+
+.bg-text {
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    left: 450px;
+    top: 350px;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 40%;
+    padding: 20px;
+    text-align: center;
+    font-family: serif;
+    border-radius: 40px;
+}
+
+
+
+.L {
+    position: relative;
+    left: 500px;
+    top: 600px;
+    font-size: 50px;
+    font-family: serif;
+    text-shadow: 1px 1px 1px #000;
+    background-color: #6495ed;
+    border-radius: 150px;
+    width: 160px;
+    padding: 10px 10px;
+}
+
+.R {
+    position: relative;
+    left: 50px;
+    top: 600px;
+    font-size: 50px;
+    font-family: serif;
+    text-shadow: 1px 1px 1px #000;
+    background-color: #6495ed;
+    border-radius: 150px;
+    width: 160px;
+    padding: 10px 10px;
+}
